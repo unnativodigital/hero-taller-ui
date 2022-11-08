@@ -1,0 +1,110 @@
+
+:root{
+    --mainfont: "Roboto";
+    --Secondfont: "Roboto condensed";
+    --PrimaryColor: #1B90FC ;
+    --WhiteColor:  #FFFFFF;
+    --blackColor: #202020;
+
+}
+
+body{
+    margin: 0;
+    font-family: var(--mainfont);  
+}
+
+/* contenedores  */
+
+.hero{
+    background-image: url(./img/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #202020;
+    color: var(--WhiteColor);
+    position: relative;
+    clip-path: polygon(0 0 , 100% 0, 100% calc(100%  - 128px), 0 100%);
+
+}
+
+.hero::before {
+    content: "";
+    display: block;
+    inline-size: 50%;
+    inset-block: 0;
+    position: absolute;
+    background-color: #202020;
+    z-index: 1;
+    clip-path: polygon(0 0, calc(100% - 151px) 0, 100% 100%, 0 100% );
+
+}
+
+.wrapper {
+    max-inline-size: 1664px;
+    margin: auto;
+}
+
+.hero-content{
+    display: flex;
+    block-size: 768px;
+    align-items: center;
+
+}
+
+.card {
+max-inline-size: 412px;
+z-index: 3;
+position: relative;
+TES
+}
+
+
+/* imagenes */
+
+img{
+    max-inline-size: 100%;
+}
+
+p,h1{
+    margin: 0;
+}
+.hero-content h1 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42.1669px;
+    line-height: 49px;
+    margin-block-end: 8px;
+}
+
+
+.hero p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16.8668px;
+line-height: 25px;
+margin-bottom: 25.3px;
+}
+
+
+.hero button {
+    border: none;
+    padding: 16px;
+    padding-inline: 32px;
+    border-radius: 52px;
+    background-color: var(--PrimaryColor);
+    color: var(--WhiteColor);
+    font-family: var(--mainfont) ;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Para hacer que los botones tengan un hoover clickeable */
+    cursor: pointer;
+}
+
+/*
+.hero button:hover {
+background-color: var(--WhiteColor);
+color: var(--PrimaryColor);
+}
+
+ */
